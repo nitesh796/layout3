@@ -38,6 +38,21 @@ hr {
   max-width: 1140px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1336px) {
+  .container {
+    max-width: 986px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
 .header {
   background: #333;
 }
