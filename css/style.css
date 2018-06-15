@@ -1,0 +1,174 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+p {
+  font-size: 14px;
+  line-height: 1.7em;
+}
+small {
+  line-height: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: #3E8DF1;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1336px) {
+  .container {
+    max-width: 986px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+.header {
+  background: #333;
+}
+.navbar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navbar li:first-child {
+  padding-left: 0;
+}
+.navbar li {
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+}
+.navbar li:hover a {
+  color: #fff;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #c1c1c1;
+  font-size: 14px;
+  padding: 20px 0;
+}
+.navbar .brand {
+  font-size: 18px;
+}
+.btn {
+  background: #569CF8;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+.btn-default {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.blog-post {
+  width: 69%;
+  margin-top: 50px;
+  float: left;
+}
+.blog-post h1 {
+  font-size: 32px;
+  margin: 10px 0;
+  color: #333;
+}
+.blog-post h3 {
+  line-height: 1.7em;
+  margin: 0;
+}
+.blog-post h1,h3 {
+  font-weight: 300;
+}
+.blog-post img {
+  max-width: 100%;
+}
+.blog-widgets {
+  width: 29%;
+  float: right;
+}
+.blog-widgets .blog-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+  background: #eee;
+}
+.blog-widgets .blog-card h4 {
+  margin: 7px 0 10px 0;
+  font-weight: 300;
+}
+.form-group {
+  display: flex;
+}
+.form-group button {
+  background: #fff;
+  margin-left: -1px;
+  padding: 0 12px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.form-group .form-control {
+  display: block;
+  width: 100%;
+  z-index: 99;
+  padding: 7px 10px;
+  border: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.categories-list {
+  display: flex;
+}
+.categories-list ul{
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 10px 0;
+}
+.categories-list .c-left {
+  margin-right: 70px;
+}
+.footer p{
+  padding: 20px 0;
+}
