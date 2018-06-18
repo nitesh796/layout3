@@ -35,23 +35,8 @@ hr {
 /* close commented backslash hack */
 
 .container {
-  max-width: 1140px;
+  max-width: 70%;
   margin: 0 auto;
-}
-@media screen and (max-width: 1336px) {
-  .container {
-    max-width: 986px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 576px;
-  }
 }
 .header {
   background: #333;
@@ -63,6 +48,9 @@ hr {
 }
 .navbar li:first-child {
   padding-left: 0;
+}
+.navbar li:last-child {
+  display: none;
 }
 .navbar li {
   display: inline-block;
@@ -166,9 +154,51 @@ hr {
   padding: 0;
   margin: 5px 0 10px 0;
 }
-.categories-list .c-left {
-  margin-right: 70px;
+.categories-list .c-left,
+.categories-list .c-right {
+  margin-right: auto;
 }
-.footer p{
+.footer p {
   padding: 20px 0;
+}
+
+
+@media (max-width: 768px) {
+  .blog-post,
+  .blog-widgets
+   {
+    width: 100%;
+  }
+  .blog-post {
+    margin-top: 30px;
+  }
+  .navbar .brand {
+    vertical-align: super;
+  }
+  .navbar li:last-child {
+    display: block;
+    float: right;
+    padding-right: 0;
+  }
+  .navbar li:last-child > a{
+    vertical-align: middle;
+  }
+  .navbar li.nav-item {
+    display: none;
+  }
+  .navbar.responsive{
+    position: relative;
+  }
+  .navbar.responsive li:last-child {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive li.nav-item {
+    float: none;
+    display: block;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
